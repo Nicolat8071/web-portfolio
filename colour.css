@@ -1,0 +1,11 @@
+:root {
+    --pink-bg: #fcddff;
+    --blue-bg: #d7e8ff;
+    --orange-highlight: #ff9137;
+    --orange-shadow: rgba(187, 188, 255, 0.459);
+    --orange-nav: rgba(253, 125, 42, 0.1);
+    --navy-heading: #23365F;
+    --navy-shadow: rgba(34, 53, 93, 0.3);
+    --black-text: #333333;
+    --box-shadow: rgba(51, 51, 51, 0.3);
+}

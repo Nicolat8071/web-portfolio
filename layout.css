@@ -1,0 +1,312 @@
+body {
+    padding: 8%;
+    max-width: 80rem;
+    margin: auto;
+}
+
+.body {
+    
+
+}
+/*HEADER LAYOUT*/
+
+.logo {
+    display: flex;
+    gap: 0.5rem;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 13%;
+    width: 100%;
+} 
+
+nav {
+    align-items: flex-end;
+}
+nav > ul{
+    display:flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+  
+/* Layout of each product category name within the box*/ 
+nav li{
+    transform: translateX(-0.4rem);
+}
+  
+/*Drop down style*/ 
+nav ul ul {
+    transform: scale(1,0); /* Hidden when not hovered*/ 
+    transform-origin: top center; /*Hidden under Categories in the middle*/ 
+    position: absolute; /*Hidden under Categories - */ 
+    text-align: left; /*Text is not centred in subcategories*/ 
+    padding-top: 0rem;
+    text-transform: none;
+    transition: 0.8s ease;
+    opacity: 0;
+}
+
+nav ul ul li {
+    margin-top: 0.5rem;
+    width: max-content;
+    padding: 0.5rem;
+    background-color: var(--orange-nav);
+    border-radius: 1rem;
+}
+
+nav ul ul li:hover {
+    background-color: var(--orange-shadow);
+}
+  
+nav li:hover ul{
+    transform: scale(1,1); /* The it become the full scale when hovered -- reveals the subcategories*/ 
+    opacity: 100%;
+}
+  
+/*HOMEPAGE MAIN CONTENT LAYOUT*/
+.project-preview {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 5%;
+    align-items: center;
+}
+
+.project-preview-float {
+    display: flex;
+    gap: 15%;
+    padding-top: 15%;
+}
+
+.right-text {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/*ABOUT PAGE LAYOUT*/
+
+.cluster {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 10%;
+}
+
+.centre {
+    text-align: center;
+}
+
+/*CONTACT PAGE LAYOUT*/
+
+.cluster-contact {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 3rem;
+}
+
+.contact-social-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    font-size: 20px;
+    color: var(--navy-heading);
+}
+
+/*PROJECT PAGE LAYOUT*/
+.project-title {
+    width: 250%;
+    text-align: right;
+    
+}
+
+.cluster-project {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding-bottom: 10%;
+}
+.old-new {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cluster-design-process {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.half-width {
+    max-width: 38rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: auto;
+    
+}
+
+/*PROJECT 2 LAYOUT*/
+.smart-car-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 5%;
+}
+
+/*PROJECT 3 LAYOUT*/
+iframe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+/*FOOTER LAYOUT*/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15%;
+}
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 946px) { 
+    .project-preview-float {
+        gap: 0%
+    }
+
+    header {
+        padding-bottom: 30%;
+    }
+
+    .project-preview-float {
+        padding-top: 25%;
+    }
+    .project-preview{
+        padding: 10%;
+    }
+
+    footer {
+        padding-top: 25%;
+    }
+
+}
+
+@media screen and (max-width: 830px) { 
+    .half-width {
+        max-width: 90%;
+    }
+
+    .cluster-contact {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 700px) { 
+    .project-preview {
+        flex-direction: column;
+    }
+
+    .project-preview-alt :nth-child(1) {
+        order: 2;
+
+    }
+
+    .right-text :nth-child(2) {
+        order: 2;
+    }
+
+    .right-text :nth-child(3) {
+        order: 3;
+    }
+
+    .right-text :nth-child(4) {
+        order: 4;
+    }
+
+    .cluster {
+        flex-direction: column ;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .cluster-project {
+        flex-direction: column;
+    }
+
+    .project-title {
+        text-align: left;
+        width: auto;
+
+    }
+    
+    .smart-car-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+
+    header {
+        padding-bottom: 50%;
+    }
+
+    nav ul ul li {
+        width: auto;
+    }
+
+}
+
+@media screen and (max-width: 670px) {
+    iframe {
+        width: 320px;
+        height: 180px;
+    }
+
+    .old-new {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .logo {
+        flex-direction: column;
+    }
+
+    nav ul ul li {
+        padding-top: 0.5rem;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    header {
+        padding-bottom: 70%;
+    }
+}

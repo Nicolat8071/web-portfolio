@@ -1,0 +1,36 @@
+/*All Buttons will have this basic styling*/
+.btn {
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    width: 12rem;
+    height: 2.5rem;
+    font-size: 20px;
+    border-radius: 2rem;
+    transition: 0.5s ease;
+    margin-top: 1rem;
+  }
+  
+  /*This is the other button style in the site 
+  -- they should be named the other way around but the design changed mid way*/
+
+  .btn-primary {
+  background-color: var(--navy-heading);
+  color: white;
+  transition: 0.5s ease;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary:hover {
+  background-color: var(--blue-bg);
+  color: var(--navy-heading);
+  box-shadow: 3px var(--black-text);
+  transform: scale(1.1);
+  border: 3px solid var(--navy-heading);
+}
+
+.btn-primary:focus{
+  box-shadow: none;
+  border: 3px solid var(--navy-heading);
+  }

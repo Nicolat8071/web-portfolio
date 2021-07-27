@@ -1,0 +1,50 @@
+.footer-link {
+    max-width: 2rem;
+    max-height: auto;
+    padding-left: 0.7rem;
+}
+
+.project-preview-img {
+    max-width: 25rem;
+    max-height: auto;
+    transition: 0.2s;
+}
+
+.project-preview-img:hover {
+    transform: scale(1.1)
+}
+
+.mario-world {
+    max-width: 100%;
+}
+
+.headshot {
+    max-width: 100%;
+}
+
+.analysis {
+    max-width: 100%;
+}
+
+.smart-car-img {
+    max-width: 100%;
+    transition: 0.5s;
+    padding-top: 1.5rem;
+}
+
+.smart-car-img:hover {
+    transform: scale(1.2)
+}
+
+@media screen and (max-width: 700px) {
+    .headshot{
+    width: 15rem;
+    }
+}
+
+@media screen and (max-width: 1270px) { 
+    .project-preview-img {
+        max-width: 15rem;
+        max-height: auto;
+    }
+ }

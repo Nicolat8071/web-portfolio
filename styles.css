@@ -1,0 +1,33 @@
+body {
+    background: 
+    linear-gradient( 130deg, var(--pink-bg),
+    var(--blue-bg));
+    background-repeat: no-repeat;
+    background-attachment: fixed
+    }
+
+a {
+    color: var(--orange-highlight);
+}
+
+
+/*HOMEPAGE MAIN CONTENT LAYOUT*/
+.project-preview {
+    background-color: white;
+    border-radius: 3rem;
+    gap: 3rem;
+    box-shadow: 3px 3px var(--box-shadow);
+    transition: 0.4s;
+}
+
+.half-width {
+    background-color: white;
+    border-radius: 3rem;
+    gap: 3rem;
+    box-shadow: 3px 3px var(--box-shadow);
+    padding: 7%; 
+}
+
+.project-preview:hover {
+    box-shadow: 3px 3px var(--orange-shadow);
+}
