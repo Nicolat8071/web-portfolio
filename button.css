@@ -27,7 +27,6 @@
   color: var(--navy-heading);
   box-shadow: 3px var(--black-text);
   transform: scale(1.1);
-  border: 3px solid var(--navy-heading);
 }
 
 .btn-primary:focus{
