@@ -36,7 +36,7 @@
     transform: scale(1.2)
 }
 
-img {
+.development-img {
     width: 100%;
     height: auto;
 }
