@@ -26,10 +26,10 @@
   background-color: var(--blue-bg);
   color: var(--navy-heading);
   box-shadow: 3px var(--black-text);
-  transform: scale(1.1);
 }
 
 .btn-primary:focus{
   box-shadow: none;
-  border: 3px solid var(--navy-heading);
+  background-color: var(--blue-bg);
+  color: var(--navy-heading);
   }
